@@ -38,6 +38,19 @@ Own course-building work such as:
 
 Do not perform fresh passage study, original-language research, historical/background reconstruction, interpretive-option comparison, or source inventories as the primary task. Route those upstream to `kv-study-engine` or to an approved study handoff.
 
+### Upstream hard-stop rule
+
+When the user's primary request asks what a passage means, asks for fresh exegesis or research, asks to compare or choose among interpretations, asks for original-language or historical-background work, or otherwise requires unsettled study conclusions, stop Course Builder work at that boundary.
+
+After identifying the upstream route:
+- do not perform the exegesis or research yourself;
+- do not compare interpretive options;
+- do not select or recommend an interpretation;
+- do not supply a substitute study from general knowledge or web research;
+- do not derive a course teaching center from an unresolved interpretive question.
+
+Respond only with the routing decision and the specific upstream deliverable needed, such as a `kv-study-engine` passage study or `kv-study-to-course-handoff`. If `kv-study-engine` is unavailable in the current runtime, identify that dependency and stop rather than assuming its authority. Resume Course Builder work only after the user supplies or approves the resulting study/handoff.
+
 Do not duplicate formal procedures owned by supporting Skills:
 - study-to-course handoff -> `kv-study-to-course-handoff`;
 - passage-faithfulness audit -> `kv-passage-faithfulness-check`;
