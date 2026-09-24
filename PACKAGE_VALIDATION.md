@@ -1,23 +1,18 @@
-# KV Course Builder Plugin — Stage 5 Package Validation
+# KV Course Builder Plugin 1.0.0 — Package Validation
 
-Build version: `0.5.1`  
-Release state: NOT RELEASED  
-Gate: package/static validation
+**Release state:** PRODUCTION CANDIDATE FOR CUTOVER  
+**Runtime basis:** validated 0.5.3 candidate  
+**Functional delta from 0.5.3:** none
 
-## Result
+## Validated gates
 
-PASS — ready for installed-instance regression testing.
+- 11/11 bundled Skills validated.
+- Portable Skill policy schema corrected and imported cleanly.
+- Core Course Builder boundaries preserved.
+- Upstream Study Engine delegation verified.
+- Six-test installed-instance sanity set: 6/6 PASS.
+- No MCP/custom Action dependency.
 
-## Deterministic checks
-- Marketplace JSON parses.
-- Portable plugin manifest JSON parses.
-- Codex compatibility manifest JSON parses.
-- Marketplace points to `./plugins/kv-course-builder-plugin`.
-- Bundled Skill count: 11.
-- All 11 bundled Skills pass the canonical quick validator.
-- `kv-study-engine`, `kv-sermon-builder`, and `kv-devotion-builder` are not bundled.
-- Core Course Builder references are bundled inside `kv-course-builder/references/`.
-- No MCP server or custom Action is declared.
-- Post-install smoke set is included.
+## Release decision
 
-This static PASS does not substitute for installed workspace smoke testing.
+Version 1.0.0 is approved for production cutover, subject only to marketplace resync/install and a short fresh-chat post-cutover sanity check.
