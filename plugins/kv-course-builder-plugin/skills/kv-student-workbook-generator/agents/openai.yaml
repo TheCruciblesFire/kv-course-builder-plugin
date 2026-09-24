@@ -1,0 +1,15 @@
+interface:
+  display_name: KV Student Workbook Generator
+  short_description: Convert approved ministry teaching content into student-facing
+    workbooks.
+  icon: assets/icon.svg
+  accent_color: '#081F3E'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
