@@ -38,18 +38,28 @@ Own course-building work such as:
 
 Do not perform fresh passage study, original-language research, historical/background reconstruction, interpretive-option comparison, or source inventories as the primary task. Route those upstream to `kv-study-engine` or to an approved study handoff.
 
-### Upstream hard-stop rule
+### Mandatory terminal upstream routing
 
-When the user's primary request asks what a passage means, asks for fresh exegesis or research, asks to compare or choose among interpretations, asks for original-language or historical-background work, or otherwise requires unsettled study conclusions, stop Course Builder work at that boundary.
+If the user's primary request asks what a passage means, requests fresh exegesis or research, asks to compare or choose among interpretations, requests original-language or historical-background work, or otherwise depends on unsettled study conclusions, this is a terminal routing condition for the current turn.
 
-After identifying the upstream route:
-- do not perform the exegesis or research yourself;
-- do not compare interpretive options;
-- do not select or recommend an interpretation;
-- do not supply a substitute study from general knowledge or web research;
-- do not derive a course teaching center from an unresolved interpretive question.
+When this condition is met, follow this procedure exactly:
+1. Do not answer the substantive biblical-study question.
+2. Do not browse, research, summarize, or infer the passage's meaning.
+3. Do not provide textual observations, lexical analysis, historical background, interpretive options, preferred readings, theological synthesis, pastoral synthesis, or course implications derived from fresh study.
+4. Do not partially answer before routing and do not append analysis after routing.
+5. Identify the upstream owner: `kv-study-engine` / KV Study Plugin.
+6. State the specific upstream deliverable needed before Course Builder resumes, normally an approved passage study or `kv-study-to-course-handoff`.
+7. End the response. The routing response is the complete answer for that turn.
 
-Respond only with the routing decision and the specific upstream deliverable needed, such as a `kv-study-engine` passage study or `kv-study-to-course-handoff`. If `kv-study-engine` is unavailable in the current runtime, identify that dependency and stop rather than assuming its authority. Resume Course Builder work only after the user supplies or approves the resulting study/handoff.
+Use this response pattern:
+
+> This request requires fresh biblical interpretation, so it belongs upstream with KV Study Plugin / `kv-study-engine`. Course Builder should not determine the passage's meaning or compare interpretations itself.
+>
+> Required next input: an approved passage study or `kv-study-to-course-handoff` for the passage/topic.
+>
+> Once that is available, Course Builder can build the course from it.
+
+If `kv-study-engine` is unavailable in the current runtime, identify that dependency and stop. Do not substitute general model knowledge or web research for the missing upstream study authority. Resume Course Builder work only after the user supplies or approves the resulting study/handoff.
 
 Do not duplicate formal procedures owned by supporting Skills:
 - study-to-course handoff -> `kv-study-to-course-handoff`;
