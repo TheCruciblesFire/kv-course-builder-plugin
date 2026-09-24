@@ -13,4 +13,4 @@ Push this repository unchanged to a new GitHub repository, recommended name `kv-
 
 ## Release discipline
 
-Version `0.5.1` is a regression candidate, not production. Do not promote it until the installed workspace instance passes the post-install smoke set. After production release, functional changes require a new immutable version.
+Version `0.5.2` is a regression candidate, not production. Do not promote it until the installed workspace instance passes the post-install smoke set. After production release, functional changes require a new immutable version.
