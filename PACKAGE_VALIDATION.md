@@ -1,6 +1,6 @@
 # KV Course Builder Plugin — Stage 5 Package Validation
 
-Build version: `0.5.0`  
+Build version: `0.5.1`  
 Release state: NOT RELEASED  
 Gate: package/static validation
 
