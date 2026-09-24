@@ -1,1 +1,13 @@
+{
+  "name": "kv-course-builder-marketplace",
+  "interface": {"displayName": "KV Course Builder Marketplace"},
+  "plugins": [
+    {
+      "name": "kv-course-builder-plugin",
+      "source": {"source": "local", "path": "./plugins/kv-course-builder-plugin"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Productivity"
+    }
+  ]
+}
 
