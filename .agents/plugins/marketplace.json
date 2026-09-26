@@ -3,7 +3,7 @@
   "interface": {"displayName": "KV Course Builder Current"},
   "plugins": [
     {
-      "name": "KV Course Builder - Current",
+      "name": "kv-course-builder-plugin",
       "source": {"source": "local", "path": "./plugins/kv-course-builder-plugin"},
       "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
       "category": "Productivity"
