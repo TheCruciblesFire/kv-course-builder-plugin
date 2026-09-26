@@ -1,6 +1,6 @@
 {
   "name": "kv-course-builder-marketplace",
-  "interface": {"displayName": "KV Course Builder Marketplace"},
+  "interface": {"displayName": "KV Course Builder Current"},
   "plugins": [
     {
       "name": "kv-course-builder-plugin",
