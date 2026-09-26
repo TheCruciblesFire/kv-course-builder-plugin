@@ -2,7 +2,7 @@
   "name": "kv-course-builder-plugin",
   "version": "1.0.0",
   "description": "Course architecture, lesson sequencing, learner formation, and bounded course-production workflows for Scripture-centered ministry courses.",
-  "skills": "./skills/"
+  "skills": "./skills/",
   "interface": {
     "displayName": "KV Course Builder - Current",
     "shortDescription": "Build Scripture-centered courses and lessons."
