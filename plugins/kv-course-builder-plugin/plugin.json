@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "kv-course-builder-plugin",
+  "name": "KV Course Builder - Current",
   "version": "1.0.0",
   "description": "Course architecture, lesson sequencing, learner formation, and bounded course-production workflows for Scripture-centered ministry courses.",
   "author": {
